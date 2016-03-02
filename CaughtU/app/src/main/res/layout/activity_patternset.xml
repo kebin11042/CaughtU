@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#55002255"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#55002255">
+
+        <ImageButton
+            android:id="@+id/ibtnPatternsetBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/top_prev_icon"
+            android:padding="10dp"
+            android:background="@drawable/selector"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/ibtnPatternsetMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/top_menu_icon"
+            android:padding="10dp"
+            android:background="@drawable/selector"
+            android:scaleType="fitXY"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/logo_title"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/description"/>
+
+    <TextView
+        android:id="@+id/txtvPatternsetPattern"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기존의 패턴을 입력해 주세요"
+        android:textSize="12dp"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center">
+
+            <com.eftimoff.patternview.PatternView
+                android:id="@+id/ptvPatternsetPattern"
+                xmlns:patternview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                patternview:gridSize="3"
+                patternview:circleColor="@color/patternCircle"
+                patternview:pathColor="@color/patternPath"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPatternsetOk"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:textSize="13dp"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_confirm_selector"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

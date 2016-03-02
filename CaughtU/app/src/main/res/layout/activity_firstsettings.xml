@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#55002255"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#55002255">
+
+        <ImageButton
+            android:id="@+id/ibtnFirstTobBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/top_prev_icon"
+            android:padding="10dp"
+            android:background="@drawable/selector"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/ibtnFirstMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/top_menu_icon"
+            android:padding="10dp"
+            android:background="@drawable/selector"
+            android:scaleType="fitXY"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/logo_title"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <com.example.bang.caughtu.customviewset.noTouchViewPager
+        android:id="@+id/vpagerFirst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Alpha">#00FFFFFF</color>
+    <color name="default_pressed">#60ffffff</color>
+
+    <color name="patternCircle">#aa70C9FC</color>
+    <color name="patternPath">#88B7E4FD</color>
+</resources>

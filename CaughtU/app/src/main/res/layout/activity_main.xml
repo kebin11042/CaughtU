@@ -1,0 +1,246 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#55002255"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#55002255">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/logo_title"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/description"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="CaughtU는 패턴 5회 실패 시 사진과 위치 정보를\n사용자의 메일로 발송해주는 어플리케이션입니다.\n원하시는 메뉴를 선택하세요."
+        android:textColor="#ffffff"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40ffffff"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layMainPattern"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/selector">
+
+            <ImageView
+                android:id="@+id/imgvMainPattern"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_pattern"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="잠금 패턴 변경"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:alpha="0.3"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:src="@drawable/right_arrow"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40ffffff"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layMainMail"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector">
+
+            <ImageView
+                android:id="@+id/imgvMainMail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_mail"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="메일 주소 변경"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:alpha="0.3"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:src="@drawable/right_arrow"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40ffffff"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layMainBackground"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector">
+
+            <ImageView
+                android:id="@+id/imgvMainBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_back"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="배경 화면 변경"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:alpha="0.3"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:src="@drawable/right_arrow"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40ffffff"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layMainUse"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector">
+
+            <ImageView
+                android:id="@+id/imgvMainUse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_use"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="어플 이용 방법"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:alpha="0.3"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:src="@drawable/right_arrow"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40ffffff"></LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/description"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:lineSpacingExtra="3dp"
+        android:textSize="12dp"
+        android:text="메일을 입력해 주세요.\n메일 주소로 사진과 위치 정보를 받아볼 수 있으며\n잊어버린 패턴을 찾을 수 있습니다."/>
+
+    <EditText
+        android:id="@+id/edtxFirstEmail"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/btnFirstEmailOk"
+        android:layout_marginTop="25dp"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="확인"
+        android:textSize="13dp"
+        android:background="@drawable/btn_confirm_selector"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

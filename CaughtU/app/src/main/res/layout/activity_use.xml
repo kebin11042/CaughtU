@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#55002255"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#55002255">
+
+        <ImageButton
+            android:id="@+id/ibtnUseBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/top_prev_icon"
+            android:padding="10dp"
+            android:background="@drawable/selector"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/ibtnUseMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/top_menu_icon"
+            android:padding="10dp"
+            android:background="@drawable/selector"
+            android:scaleType="fitXY"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/logo_title"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/description"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="이용 방법 설명"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="23dp"
+                android:textSize="13dp"
+                android:id="@+id/txtvUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
